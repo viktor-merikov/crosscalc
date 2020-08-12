@@ -1,0 +1,22 @@
+.items__list {
+   padding: 70px 10px 50px 10px;
+}
+
+.items__list__filter {
+   margin: 20px 50px;
+   width: 300px;
+   padding: 5px;
+   font-size: 16px;
+   border: 1px solid red;
+   box-shadow: 0 2px 5px red;
+   background-color: transparent;
+}
+
+.items__list__filter:focus {
+   border: 1px solid greenyellow;
+   box-shadow: 0 2px 5px greenyellow;
+}
+
+.items__list__search label {
+   font-size: 22px;
+}

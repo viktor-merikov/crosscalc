@@ -1,0 +1,36 @@
+<app-spinner *ngIf="!recipeItem"></app-spinner>
+<div class="item__craft" *ngIf="recipeItem">
+   <div class="item__craft__row">
+
+      <div class="item__craft__image">
+         <a [routerLink]="'/'">&#x227A; Back</a>
+         <img [src]='imageUrl+recipeItem.item.image'>
+         <span>Name: {{recipeItem.item.name}}</span>
+         <span>Type: {{recipeItem.item.typeName}}</span>
+         <span>Rarity: {{recipeItem.item.rarityName}}</span>
+         <span>Faction: {{recipeItem.item.faction}}</span>
+         <span>Description: {{recipeItem.item.description}}</span>
+      </div>
+
+      <div class="item__craft__body">
+         <div class="body__row">
+            <div class="body__list">
+               <div class="material__row" *ngFor="let ingred of recipeItem.ingredients">
+                  <img [src]="imageUrl+ingred.item.image" alt="">
+                  <span>{{ingred.item.name}}</span>
+                  <span>{{ingred.number}}</span>
+                  <span>{{ingred.buyPriceTimesNumber / 100 | number: "1.2"}}</span>
+               </div>
+            </div>
+            <div class="total__coast">Total coast: {{recipeItem.item.craftingBuySum / 100}}</div>
+            <div class="total__coast">Buy price: {{recipeItem.item.buyPrice / 100}}</div>
+         </div>
+      </div>
+
+
+      <div class="item__third">
+         <span>Here can be your advertising</span>
+         <span>Tel:+55 555 55 55</span>
+      </div>
+   </div>
+</div>

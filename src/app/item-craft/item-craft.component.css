@@ -1,0 +1,91 @@
+.item__craft {
+   padding: 100px 20px;
+}
+
+.item__craft__row {
+   display: flex;
+}
+
+.item__craft__image {
+   flex: 0 0 600px;
+   display: flex;
+   flex-direction: column;
+}
+
+.item__craft__image a {
+   color: black;
+   font-size: 24px;
+   cursor: pointer;
+}
+
+.item__craft__image a:hover {
+   letter-spacing: 3px;
+   color: red;
+}
+
+.item__craft__image img {
+   width: 300px;
+   box-shadow: 0px 0px 20px 0px red;
+   margin: 40px 0 40px 0;
+}
+
+.item__craft__image > span {
+   font-size: 30px;
+   padding: 10px 0;
+}
+
+.item__craft__body {
+   margin-right: 50px;
+}
+
+.body__row {
+   display: flex;
+   flex-direction: column;
+}
+
+.body__list {
+   display: flex;
+   flex-direction: column;
+}
+
+.material__row {
+   min-height: 70px;
+   display: flex;
+   align-items: center;
+   border-bottom: 2px solid red;
+}
+
+.material__row > img {
+   width: 50px;
+   margin-right: 20px;
+}
+
+.material__row > span {
+   width: 200px;
+   font-size: 18px;
+   padding: 0 30px;
+}
+
+.total__coast {
+   padding: 20px 0;
+   font-size: 40px;
+   text-align: center;
+}
+
+.item__third {
+   border: 1px solid black;
+   padding: 20px;
+   background-color: white;
+   flex: 1 1 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.item__third > span {
+   text-align: center;
+   font-size: 80px;
+   color: black;
+   padding: 10px 0;
+}

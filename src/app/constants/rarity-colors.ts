@@ -1,0 +1,8 @@
+export const RARITY_COLORS = {
+   COMMON: "#FFFFFF",
+   RARE: "#0066CC",
+   SPECIAL: "#33CCCC",
+   EPIC: "#B800FF",
+   LEGENDARY: "#FF9F3F",
+   RELIC: "#FF6600"
+}

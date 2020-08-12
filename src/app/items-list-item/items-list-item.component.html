@@ -1,0 +1,11 @@
+<div class="list__item" (click)="onClick(item.id)">
+   <img [src]="imageUrl+item.image" alt="Item">
+   <span class="list__item__title" [style.color]="color"> {{item.name}}</span>
+   <div class="list__item__prices">
+      <span class="price">Sell price: <span class="price-amount">{{item.sellPrice / 100| number: '1.2'}}<img
+               src="assets/coin-logo.png">
+         </span></span>
+      <span class="price">Buy price: <span class="price-amount">{{item.buyPrice / 100 | number: '1.2'}}<img
+               src="assets/coin-logo.png"></span></span>
+   </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="factions">
+
+   <div class="factions__row">
+
+      <div class="factions__column" *ngFor="let faction of factions">
+         <div class="column__item">
+            <div class="item__row">
+               <div class="item__image">
+                  <img [src]="faction.image" alt="faction_logo">
+               </div>
+               <div class="item__body">
+                  <div class="item__title">ФРАКЦИЯ «{{faction.name}}»</div>
+                  <div class="item__text">
+                     <span>ОПИСАНИЕ ФРАКЦИИ</span>
+                     <p>{{faction.description}}</p>
+                     <span>ПРЕИМУЩЕСТВА ПРЕБЫВАНИЯ ВО ФРАКЦИИ</span>
+                     <p>{{faction.listTitle}}</p>
+                     <ul>
+                        <li *ngFor="let item of faction.listItems">{{item}}</li>
+                     </ul>
+                     <p>{{faction.slogan}}</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+</div>

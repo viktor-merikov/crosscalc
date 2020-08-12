@@ -1,0 +1,17 @@
+<div class="items__list">
+   <div class="items__list__search">
+      <label>Search:</label>
+      <input class="items__list__filter" type="text" (keyup)="onChange($event)" placeholder="type here...">
+   </div>
+   <app-spinner *ngIf="loading"></app-spinner>
+   <ul *ngIf="items.length !== 0">
+      <li *ngIf="items.length === 0" style="color: red;">
+         <h2>OOPS! But searching item don't exist.</h2>
+      </li>
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+      <li *ngFor="let item of items | paginate:{ itemsPerPage: 10, currentPage: p }">
+         <app-items-list-item [item]='item'></app-items-list-item>
+      </li>
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+   </ul>
+</div>
